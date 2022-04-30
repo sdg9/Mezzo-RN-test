@@ -10,6 +10,7 @@
 
 import React from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -73,6 +74,24 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <Section title="Fire API Call">
+            <Button
+              title="Hello"
+              onPress={async () => {
+                console.log('hi');
+                try {
+                  const response = await fetch(
+                    'https://reactnative.dev/movies.json',
+                  );
+                  const json = await response.json();
+                  console.log('Response: ', json);
+                  return json.movies;
+                } catch (error) {
+                  console.error(error);
+                }
+              }}
+            />
+          </Section>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
