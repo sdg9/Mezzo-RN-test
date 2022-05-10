@@ -18,6 +18,7 @@ import {
   Text,
   useColorScheme,
   View,
+  Platform,
 } from 'react-native';
 
 import {
@@ -27,6 +28,22 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+import {interceptedFetch} from '@caribou-crew/mezzo-intercept-fetch';
+
+import {interceptReactNativeFetch} from '@caribou-crew/mezzo-interceptor-react-native';
+const host = Platform.OS === 'android' ? '10.0.2.2' : 'localhost';
+
+// Manual wrap of single fetch endpoint, TODO address socket connecting each instance. Use REST instead?
+// Using both monkeypatch and this will result in 2 recordings here (as under the hood it's still monkeypatched)
+const fetchWithIntercept = interceptedFetch(fetch, {
+  host,
+});
+
+// Monkeypatch every fetch
+interceptReactNativeFetch({
+  host,
+});
 
 const Section: React.FC<{
   title: string;
@@ -74,20 +91,36 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Fire API Call">
+          <Section title="API Tester">
             <Button
-              title="Hello"
+              title="Make API Call Manual Wrap (call fetchWithIntercept instead of fetch)"
               onPress={async () => {
-                console.log('hi');
+                try {
+                  const response = await fetchWithIntercept(
+                    'https://reactnative.dev/movies.json',
+                  );
+                  console.log('Response: ', response);
+                  const json = await response.json();
+                  console.log('Response JSON: ', json);
+                  return json.movies;
+                } catch (error) {
+                  console.error(error);
+                }
+              }}
+            />
+            <Button
+              title="Make API Call MonkeyPatched"
+              onPress={async () => {
                 try {
                   const response = await fetch(
                     'https://reactnative.dev/movies.json',
                   );
+                  // console.log('MonkeyPath Fetch Response: ', response);
                   const json = await response.json();
-                  console.log('Response: ', json);
+                  // console.log('Response JSON: ', json);
                   return json.movies;
                 } catch (error) {
-                  console.error(error);
+                  console.error('MonkeyPatch Fetch Error: ', error);
                 }
               }}
             />
