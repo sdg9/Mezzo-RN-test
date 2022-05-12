@@ -10,6 +10,7 @@
 
 import React from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -17,6 +18,7 @@ import {
   Text,
   useColorScheme,
   View,
+  Platform,
 } from 'react-native';
 
 import {
@@ -26,6 +28,26 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+import Reactotron from 'reactotron-react-native';
+import mezzoAndReactotronNetworking from '@caribou-crew/mezzo-interceptor-react-native-with-reactotron';
+
+Reactotron.configure({
+  name: 'React Native Demo',
+})
+  .useReactNative({
+    asyncStorage: false,
+    networking: false, // set networking to false if using react native
+    editor: false,
+    overlay: false,
+  })
+  .use(
+    mezzoAndReactotronNetworking({
+      host: Platform.OS === 'android' ? '10.0.2.2' : 'localhost',
+      mezzoPort: 8000,
+    }),
+  ) // and use mezzo & reactotron networking
+  .connect();
 
 const Section: React.FC<{
   title: string;
@@ -73,6 +95,24 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <Section title="API Tester">
+            <Button
+              title="Make API Call MonkeyPatched"
+              onPress={async () => {
+                try {
+                  const response = await fetch(
+                    'https://reactnative.dev/movies.json',
+                  );
+                  // console.log('MonkeyPath Fetch Response: ', response);
+                  const json = await response.json();
+                  // console.log('Response JSON: ', json);
+                  return json.movies;
+                } catch (error) {
+                  console.error('MonkeyPatch Fetch Error: ', error);
+                }
+              }}
+            />
+          </Section>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.

@@ -10,8 +10,10 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@caribou-crew/mezzo-interceptor-react-native-with-reactotron": "^0.6.1",
     "react": "17.0.2",
-    "react-native": "0.68.1"
+    "react-native": "0.68.1",
+    "reactotron-react-native": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
