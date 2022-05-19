@@ -18,7 +18,6 @@ import {
   Text,
   useColorScheme,
   View,
-  Platform,
 } from 'react-native';
 
 import {
@@ -29,10 +28,28 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-// import {interceptedFetch} from '@caribou-crew/mezzo-intercept-fetch';
+import Reactotron from 'reactotron-react-native';
+import mezzoAndReactotronNetworking from '@caribou-crew/mezzo-interceptor-react-native-with-reactotron';
 
-import {interceptReactNativeFetch} from '@caribou-crew/mezzo-interceptor-react-native';
-const host = Platform.OS === 'android' ? '10.0.2.2' : 'localhost';
+Reactotron.configure({
+  name: 'React Native Demo',
+})
+  .useReactNative({
+    asyncStorage: false,
+    networking: false, // set networking to false if using react native
+    editor: false,
+    overlay: false,
+  })
+  .use(
+    mezzoAndReactotronNetworking({
+      ignoreUrls: [/symbolicate/],
+    }),
+  ) // and use mezzo & reactotron networking
+  .connect();
+
+// import {interceptedFetch} from '@caribou-crew/mezzo-intercept-fetch';
+// import {interceptReactNativeFetch} from '@caribou-crew/mezzo-interceptor-react-native';
+// const host = Platform.OS === 'android' ? '10.0.2.2' : 'localhost';
 
 // Manual wrap of single fetch endpoint, TODO address socket connecting each instance. Use REST instead?
 // Using both monkeypatch and this will result in 2 recordings here (as under the hood it's still monkeypatched)
@@ -41,9 +58,9 @@ const host = Platform.OS === 'android' ? '10.0.2.2' : 'localhost';
 // });
 
 // Monkeypatch every fetch
-interceptReactNativeFetch({
-  host,
-});
+// interceptReactNativeFetch({
+//   // host,
+// });
 
 const Section: React.FC<{
   title: string;

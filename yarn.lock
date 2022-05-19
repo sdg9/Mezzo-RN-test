@@ -757,72 +757,41 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@caribou-crew/mezzo-constants@/Users/stevengoff/development/mezzo/dist/libs/constants":
-  version "0.2.1"
+"@caribou-crew/mezzo-constants@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-constants/-/mezzo-constants-0.7.0.tgz#454cfea99f05da8b07bab333bc131b5edbb56587"
+  integrity sha512-iiE46bj+Zr6se64MjMGcPJ1+9Bwz60TOHmZzSCLLpujf0MG7kpGMSq+SavaO5mbb0qeTzS7HYRcyBM1M5EF3RA==
 
-"@caribou-crew/mezzo-constants@0.2.1", "@caribou-crew/mezzo-constants@file:../mezzo/dist/libs/constants":
-  version "0.2.1"
-
-"@caribou-crew/mezzo-core-client@/Users/stevengoff/development/mezzo/dist/libs/core-client":
-  version "0.0.1"
+"@caribou-crew/mezzo-core-client@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-core-client/-/mezzo-core-client-0.7.0.tgz#6b8f525d76ff5049ab4b89faf6369e387ea42380"
+  integrity sha512-kEDjDeMHNhPr0u53XEJL58bRkehuLaWtP4R/o8JXihEYgT8t14tFGPQYj5QFHUTFed11bMYGssjZ6ymt3chRgQ==
   dependencies:
-    "@caribou-crew/mezzo-constants" "0.2.1"
-    "@caribou-crew/mezzo-interfaces" "0.3.0"
-    "@caribou-crew/mezzo-utils-logger" "0.0.1"
+    "@caribou-crew/mezzo-constants" "0.7.0"
+    "@caribou-crew/mezzo-interfaces" "0.7.0"
     axios "^0.26.1"
-    colors "^1.4.0"
+    lodash.debounce "^4.0.8"
     loglevel "^1.8.0"
-    tracer "^1.1.5"
     ws "^8.6.0"
 
-"@caribou-crew/mezzo-core-client@file:../mezzo/dist/libs/core-client":
-  version "0.0.1"
+"@caribou-crew/mezzo-interceptor-react-native-with-reactotron@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-interceptor-react-native-with-reactotron/-/mezzo-interceptor-react-native-with-reactotron-0.7.0.tgz#794339bfcf5aadab7f24f0d77d73ac7d9f00854a"
+  integrity sha512-YSYb+yWJqcJIv1f1BPMr1FtzcJHMxmQHFQ46K+HwVpb+HEyAHW3Xd+TbBinD8mr3c7zUMqNeWYsh3uXaVEadGg==
   dependencies:
-    "@caribou-crew/mezzo-constants" "0.2.1"
-    "@caribou-crew/mezzo-interfaces" "0.3.0"
-    "@caribou-crew/mezzo-utils-logger" "0.0.1"
+    "@caribou-crew/mezzo-constants" "0.7.0"
+    "@caribou-crew/mezzo-core-client" "0.7.0"
+    "@caribou-crew/mezzo-interfaces" "0.7.0"
     axios "^0.26.1"
-    colors "^1.4.0"
+    lodash.debounce "^4.0.8"
     loglevel "^1.8.0"
-    tracer "^1.1.5"
+    query-string "^7.1.1"
     ws "^8.6.0"
 
-"@caribou-crew/mezzo-interceptor-fetch@file:../mezzo/dist/libs/interceptor-fetch":
-  version "0.0.1"
-
-"@caribou-crew/mezzo-interceptor-react-native@/Users/stevengoff/development/mezzo/dist/libs/interceptor-react-native":
-  version "0.0.1"
-
-"@caribou-crew/mezzo-interceptor-react-native@file:../mezzo/dist/libs/interceptor-react-native":
-  version "0.0.1"
-
-"@caribou-crew/mezzo-interfaces@/Users/stevengoff/development/mezzo/dist/libs/interfaces":
-  version "0.3.0"
-
-"@caribou-crew/mezzo-interfaces@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-interfaces/-/mezzo-interfaces-0.3.0.tgz#21fa2e06eb84a661565bc776d95815316493e131"
-  integrity sha512-FkKn+fM88eOrfHbpbQop1JN1DlJjy8rFNwXFMyUbfGPUGyTeL346eicVTqCSTFfTNzUwD0YaLfszixAGQ7NPOA==
-
-"@caribou-crew/mezzo-interfaces@file:../mezzo/dist/libs/interfaces":
-  version "0.3.0"
-
-"@caribou-crew/mezzo-utils-logger@/Users/stevengoff/development/mezzo/dist/libs/utils-logger":
-  version "0.0.1"
-  dependencies:
-    colors "^1.4.0"
-    tracer "^1.1.5"
-
-"@caribou-crew/mezzo-utils-logger@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-utils-logger/-/mezzo-utils-logger-0.0.1.tgz#ea4883ce62781d20bbb7112de56e15d5223f9c5b"
-  integrity sha512-9ggE38LBliAwbt6TR1ulvpIh2WXzaupfIYdynsjy6sn+/joncE7VjQ/57tml24RjCgFkc5c/gMq4w9DE2F/27w==
-
-"@caribou-crew/mezzo-utils-logger@file:../mezzo/dist/libs/utils-logger":
-  version "0.0.1"
-  dependencies:
-    colors "^1.4.0"
-    tracer "^1.1.5"
+"@caribou-crew/mezzo-interfaces@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-interfaces/-/mezzo-interfaces-0.7.0.tgz#3bb679b6affa888b8111991a7bd680d466116070"
+  integrity sha512-BUo+0n5lLG4LJINPliWmw9h+0WFeDemjPs7EaZgC3BIr2LbRgZQKMMJaafmTBqE5j1SMdg5tgWWMuQ5rq5/+og==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
@@ -2413,11 +2382,6 @@ colorette@^1.0.7:
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.4.0.tgz#5190fbb87276259a86ad700bff2c6d6faa3fca40"
   integrity sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g==
 
-colors@1.4.0, colors@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
-  integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
-
 combined-stream@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
@@ -2570,11 +2534,6 @@ data-urls@^2.0.0:
     abab "^2.0.3"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
-
-dateformat@4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-4.5.1.tgz#c20e7a9ca77d147906b6dc2261a8be0a5bd2173c"
-  integrity sha512-OD0TZ+B7yP7ZgpJf5K2DIbj3FZvFvxgFUuaqA/V5zTjAtAAXZ1E8bktHxmAGs4x5b7PflqA9LeQ84Og7wYtF7Q==
 
 dayjs@^1.8.15:
   version "1.11.2"
@@ -5181,6 +5140,11 @@ minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.6:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
+mitt@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/mitt/-/mitt-1.1.3.tgz#528c506238a05dce11cd914a741ea2cc332da9b8"
+  integrity sha512-mUDCnVNsAi+eD6qA0HkRkwYczbLHJ49z17BGe2PYRhZL4wpZUFZGJHU7/5tmvohoma+Hdn0Vh/oJTiPEmgSruA==
+
 mixin-deep@^1.2.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.2.tgz#1120b43dc359a785dce65b55b82e257ccf479566"
@@ -5195,11 +5159,6 @@ mkdirp@^0.5.1:
   integrity sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==
   dependencies:
     minimist "^1.2.6"
-
-mkdirp@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
-  integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
 ms@2.0.0:
   version "2.0.0"
@@ -5778,6 +5737,15 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
+query-string@6.10.1:
+  version "6.10.1"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.10.1.tgz#30b3505f6fca741d5ae541964d1b3ae9dc2a0de8"
+  integrity sha512-SHTUV6gDlgMXg/AQUuLpTiBtW/etZ9JT6k6RCtCyqADquApLX0Aq5oK/s5UeTUAWBG50IExjIr587GqfXRfM4A==
+  dependencies:
+    decode-uri-component "^0.2.0"
+    split-on-first "^1.0.0"
+    strict-uri-encode "^2.0.0"
+
 query-string@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-7.1.1.tgz#754620669db978625a90f635f12617c271a088e1"
@@ -5835,6 +5803,11 @@ react-native-codegen@^0.0.13:
     flow-parser "^0.121.0"
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
+
+react-native-flipper@^0.34.0:
+  version "0.34.0"
+  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.34.0.tgz#7df1f38ba5d97a9321125fe0fccbe47d99e6fa1d"
+  integrity sha512-48wgm29HJTOlZ0DibBsvXueEOY0EPIVL0wWKbwRfgrk86+luSEuLW3aZC50oJa95zSFb9qYShTV/6dWqh4Jamg==
 
 react-native-get-random-values@^1.8.0:
   version "1.8.0"
@@ -5924,6 +5897,23 @@ react@17.0.2:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
+
+reactotron-core-client@2.8.10:
+  version "2.8.10"
+  resolved "https://registry.yarnpkg.com/reactotron-core-client/-/reactotron-core-client-2.8.10.tgz#798f2a7aa9fd7e18e7a510531a613e8ae3008eb0"
+  integrity sha512-SYRO4OCutJzfWMnaULUGVyETZnMDCU5ECNflXyM3Z5Gnfxp/wV6d7jYonhfxHdpU/aGb4Eg15C22myOCXSu6HQ==
+
+reactotron-react-native@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/reactotron-react-native/-/reactotron-react-native-5.0.1.tgz#a14bbc370020812274baf55f763dd8e78421e040"
+  integrity sha512-xiwTjJuQga6mD+ynt7fj50scMbfiSFDe1AIsf7VVqcSDrYJNnzVqHZtlC+lqYlzDu7TucOUQVVxJALcASEWYrg==
+  dependencies:
+    mitt "1.1.3"
+    query-string "6.10.1"
+    reactotron-core-client "2.8.10"
+    rn-host-detect "1.2.0"
+  optionalDependencies:
+    react-native-flipper "^0.34.0"
 
 read-pkg-up@^7.0.1:
   version "7.0.1"
@@ -6177,7 +6167,7 @@ rimraf@~2.6.2:
   dependencies:
     glob "^7.1.3"
 
-rn-host-detect@^1.2.0:
+rn-host-detect@1.2.0, rn-host-detect@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/rn-host-detect/-/rn-host-detect-1.2.0.tgz#8b0396fc05631ec60c1cb8789e5070cdb04d0da0"
   integrity sha512-btNg5kzHcjZZ7t7mvvV/4wNJ9e3MPgrWivkRgWURzXL0JJ0pwWlU4zrbmdlz3HHzHOxhBhHB4D+/dbMFfu4/4A==
@@ -6790,11 +6780,6 @@ through2@^2.0.1:
     readable-stream "~2.3.6"
     xtend "~4.0.1"
 
-tinytim@0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/tinytim/-/tinytim-0.1.1.tgz#c968a1e5559ad9553224ef7627bab34e3caef8a8"
-  integrity sha1-yWih5VWa2VUyJO92J7qzTjyu+Kg=
-
 tmpl@1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.5.tgz#8683e0b902bb9c20c4f726e3c0b69f36518c07cc"
@@ -6862,16 +6847,6 @@ tr46@~0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
-
-tracer@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/tracer/-/tracer-1.1.5.tgz#f53f761ed53c586a6c1d161581057c86780fa87d"
-  integrity sha512-I7/AwGm/gf3KU7DcltmSmKJbytQj3q4hg+JKadtIKocfvBY4olY4SV8rAoMRvAD60gPlggEJ1QoSlb2dQtWHNw==
-  dependencies:
-    colors "1.4.0"
-    dateformat "4.5.1"
-    mkdirp "^1.0.4"
-    tinytim "0.1.1"
 
 tslib@^1.8.1:
   version "1.14.1"
