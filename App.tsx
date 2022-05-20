@@ -42,10 +42,12 @@ Reactotron.configure({
     overlay: false,
   })
   .use(
-    mezzoAndReactotronNetworking({
-      host: Platform.OS === 'android' ? '10.0.2.2' : 'localhost',
-      mezzoPort: 8000,
-    }),
+    mezzoAndReactotronNetworking(
+      {},
+      {
+        hostname: Platform.OS === 'android' ? '10.0.2.2' : 'localhost',
+      },
+    ),
   ) // and use mezzo & reactotron networking
   .connect();
 

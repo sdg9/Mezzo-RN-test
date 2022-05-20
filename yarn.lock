@@ -757,39 +757,41 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@caribou-crew/mezzo-constants@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-constants/-/mezzo-constants-0.6.1.tgz#4c7b361926b7eff80fc333579e8ed73c667e4f64"
-  integrity sha512-ny6nHOGUm+X0MGp4yJ4BJIrfR7TOpcXy+wX+7+9bly4Xw11iiXvF9Q0dA4ST08cl1S7DAr0QFOJR814wewwOww==
+"@caribou-crew/mezzo-constants@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-constants/-/mezzo-constants-0.7.1.tgz#ad45a15ce5275c304f1cdbb2eba688995684883b"
+  integrity sha512-JE3tjIP0fc8PSq98CUUeBZy7JpeTUFEdQy9R05jYKlRmL8cT8TDM0auXRjU6Zqmk8XNMqSyfwgDrKUW8PGpR/w==
 
-"@caribou-crew/mezzo-core-client@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-core-client/-/mezzo-core-client-0.6.1.tgz#206d5cee672a57d7bd85b7f6b30ed7102520a3ee"
-  integrity sha512-XoxU1nfzWFOxzY7WXj7OgJpQ+Ly2grFrk1murjumGj6QBpL48w0riMjrQ9jd0LF4uVmK6Uf9PSCmNT48RP6JBw==
+"@caribou-crew/mezzo-core-client@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-core-client/-/mezzo-core-client-0.7.1.tgz#09526027f6f5cd436e9ea0db8e9106b3cfbfe562"
+  integrity sha512-MMfJtbNL5F9p8ARmQ7cAUQcyiFI8yc2MKp+WD61saMacAwwUrokNbR5yhqVLFxOVJIHaJE9HZNYF1vScx2KXBA==
   dependencies:
-    "@caribou-crew/mezzo-constants" "0.6.1"
-    "@caribou-crew/mezzo-interfaces" "0.6.1"
+    "@caribou-crew/mezzo-constants" "0.7.1"
+    "@caribou-crew/mezzo-interfaces" "0.7.1"
     axios "^0.26.1"
+    lodash.debounce "^4.0.8"
     loglevel "^1.8.0"
     ws "^8.6.0"
 
-"@caribou-crew/mezzo-interceptor-react-native-with-reactotron@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-interceptor-react-native-with-reactotron/-/mezzo-interceptor-react-native-with-reactotron-0.6.1.tgz#7e2d1f76291848e1ee37f51c283cc37b161c0050"
-  integrity sha512-hPTV8jXzmRuHVa/Vc25Bnr5ccv7XGc+iMuy2WG6fhATEeTGLCZtx07digE//S7iwe6gHbCOSjq0xD22CsBrqTQ==
+"@caribou-crew/mezzo-interceptor-react-native-with-reactotron@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-interceptor-react-native-with-reactotron/-/mezzo-interceptor-react-native-with-reactotron-0.7.1.tgz#2884cc49aff0d9cfd5cc587f5fb249d0397d8c10"
+  integrity sha512-/irUGDIoqfwsOWVLBAlUyYmSrgAZTmgRwqSODec3yoiuYONj4scSFG0/LYdi7UHBhKgtu494+ddPL5PcmbUxDg==
   dependencies:
-    "@caribou-crew/mezzo-constants" "0.6.1"
-    "@caribou-crew/mezzo-core-client" "0.6.1"
-    "@caribou-crew/mezzo-interfaces" "0.6.1"
+    "@caribou-crew/mezzo-constants" "0.7.1"
+    "@caribou-crew/mezzo-core-client" "0.7.1"
+    "@caribou-crew/mezzo-interfaces" "0.7.1"
     axios "^0.26.1"
+    lodash.debounce "^4.0.8"
     loglevel "^1.8.0"
     query-string "^7.1.1"
     ws "^8.6.0"
 
-"@caribou-crew/mezzo-interfaces@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-interfaces/-/mezzo-interfaces-0.6.1.tgz#22fd59e69b39c21d32578c7beac68e77f8ba666c"
-  integrity sha512-92ZjzlGYQBfXLmg5azWV1GS6I+w9rl3JErlZE9kHDkDNixf+ZYcyDTs2X/Ha3PSXLJIvwOxIjU4gC2mGZRDS7A==
+"@caribou-crew/mezzo-interfaces@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@caribou-crew/mezzo-interfaces/-/mezzo-interfaces-0.7.1.tgz#df5c61d1357ec672fd311246091984e667b8fc05"
+  integrity sha512-FnJMUC3n2qhwRqa5rJ3PvmtBDyU/BaFQa6qaCjVNsIhYSNZ6J0jKtMTjL/wI8sAiqezpKvC7+ZF7qHAuvtzAoQ==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
